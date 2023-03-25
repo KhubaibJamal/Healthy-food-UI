@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:healthy_food_ui/Screens/Home/home_page.dart';
 import 'package:healthy_food_ui/constant.dart';
 
+import '../../widget_screen.dart';
+
 class BottomNavigationAppBar extends StatefulWidget {
   const BottomNavigationAppBar({super.key});
 
@@ -13,9 +15,7 @@ class _BottomNavigationAppBarState extends State<BottomNavigationAppBar> {
   int currentTab = 0;
   final List screens = [
     const HomePage(),
-    // const DetailScreen(),
-    // const BoltScreen(),
-    // const ShoppingScreen(),
+    const WidgetScreen(),
   ];
 
   final PageStorageBucket bucket = PageStorageBucket();
@@ -50,7 +50,7 @@ class _BottomNavigationAppBarState extends State<BottomNavigationAppBar> {
             MaterialButton(
               onPressed: () {
                 setState(() {
-                  // currentScreen = const DetailScreen();
+                  currentScreen = const WidgetScreen();
                   currentTab = 1;
                 });
               },
@@ -64,7 +64,7 @@ class _BottomNavigationAppBarState extends State<BottomNavigationAppBar> {
             MaterialButton(
               onPressed: () {
                 setState(() {
-                  // currentScreen = const BoltScreen();
+                  currentScreen = const WidgetScreen();
                   currentTab = 2;
                 });
               },
@@ -78,7 +78,7 @@ class _BottomNavigationAppBarState extends State<BottomNavigationAppBar> {
             MaterialButton(
               onPressed: () {
                 setState(() {
-                  // currentScreen = const ShoppingScreen();
+                  currentScreen = const WidgetScreen();
                   currentTab = 3;
                 });
               },

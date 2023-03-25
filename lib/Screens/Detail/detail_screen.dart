@@ -69,7 +69,7 @@ class _DetailScreenState extends State<DetailScreen> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        height: 70,
+        height: 75,
         color: const Color(0xff131923),
         // color: Colors.transparent,
         child: InkWell(
@@ -79,8 +79,6 @@ class _DetailScreenState extends State<DetailScreen> {
           child: Padding(
             padding: EdgeInsets.all(defaultPadding / 2),
             child: Container(
-              // height: 70,
-              // width: width / 2,
               decoration: BoxDecoration(
                 // color: Colors.red,
                 borderRadius: BorderRadiusDirectional.circular(18.0),
