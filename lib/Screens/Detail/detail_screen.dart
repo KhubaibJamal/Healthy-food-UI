@@ -62,17 +62,6 @@ class _DetailScreenState extends State<DetailScreen> {
                       ),
                     ],
                   ),
-                  // const Divider(
-                  //   color: Color(0xff313a48),
-                  // ),
-                  // Container(
-                  //   height: 70,
-                  //   width: width,
-                  //   decoration: BoxDecoration(
-                  //     color: Colors.red,
-                  //     borderRadius: BorderRadiusDirectional.circular(20.0),
-                  //   ),
-                  // )
                 ],
               ),
             ),
@@ -80,33 +69,36 @@ class _DetailScreenState extends State<DetailScreen> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        height: 60,
+        height: 70,
         color: const Color(0xff131923),
         // color: Colors.transparent,
         child: InkWell(
           onTap: () {
             print("object");
           },
-          child: Container(
-            // height: 70,
-            // width: width / 2,
-            decoration: BoxDecoration(
-              // color: Colors.red,
-              borderRadius: BorderRadiusDirectional.circular(18.0),
-              gradient: LinearGradient(
-                colors: primaryColorList,
-                begin: Alignment.centerRight,
-                end: Alignment.centerLeft,
+          child: Padding(
+            padding: EdgeInsets.all(defaultPadding / 2),
+            child: Container(
+              // height: 70,
+              // width: width / 2,
+              decoration: BoxDecoration(
+                // color: Colors.red,
+                borderRadius: BorderRadiusDirectional.circular(18.0),
+                gradient: LinearGradient(
+                  colors: primaryColorList,
+                  begin: Alignment.centerRight,
+                  end: Alignment.centerLeft,
+                ),
               ),
-            ),
-            child: Center(
-              child: Text(
-                "\$4.99/ Add to card",
-                // textAlign: TextAlign.justify,
-                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                      color: Colors.white, fontWeight: FontWeight.bold,
-                      // height: 1.2,
-                    ),
+              child: Center(
+                child: Text(
+                  "\$4.99/ Add to card",
+                  // textAlign: TextAlign.justify,
+                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                        color: Colors.white, fontWeight: FontWeight.bold,
+                        // height: 1.2,
+                      ),
+                ),
               ),
             ),
           ),

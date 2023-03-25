@@ -40,7 +40,8 @@ class _HomePageState extends State<HomePage> {
                   const AnimatedProgressBar(),
                   SizedBox(height: defaultPadding * 2),
                   PopularCard(
-                    height: height / 3,
+                    // height: height / 3.2,
+                    height: 210,
                     width: width,
                   ),
                 ],
