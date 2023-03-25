@@ -78,10 +78,13 @@ class CardData extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              image,
-              scale: 2.5,
-              fit: BoxFit.cover,
+            Hero(
+              tag: "image",
+              child: Image.asset(
+                image,
+                scale: 2.5,
+                fit: BoxFit.cover,
+              ),
             ),
             Text(
               text,

@@ -81,7 +81,7 @@ class _DetailScreenState extends State<DetailScreen> {
             child: Container(
               decoration: BoxDecoration(
                 // color: Colors.red,
-                borderRadius: BorderRadiusDirectional.circular(18.0),
+                borderRadius: BorderRadiusDirectional.circular(15.0),
                 gradient: LinearGradient(
                   colors: primaryColorList,
                   begin: Alignment.centerRight,

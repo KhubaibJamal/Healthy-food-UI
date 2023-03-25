@@ -13,8 +13,11 @@ class DetailHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image(
-          image: AssetImage("${widget.image}"),
+        Hero(
+          tag: "image",
+          child: Image(
+            image: AssetImage("${widget.image}"),
+          ),
         ),
         InkWell(
           onTap: () {
