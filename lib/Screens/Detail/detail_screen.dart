@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthy_food_ui/Screens/Detail/Component/card_info.dart';
 import 'package:healthy_food_ui/constant.dart';
-import 'package:simple_circular_progress_bar/simple_circular_progress_bar.dart';
-
 import 'Component/Bottom_animation.dart';
 import 'Component/detail_header.dart';
 import 'Component/row_widget_text.dart';
@@ -42,9 +40,9 @@ class _DetailScreenState extends State<DetailScreen> {
                   SizedBox(height: defaultPadding),
                   CardInfoWidget(title: widget.text),
                   SizedBox(height: defaultPadding + 10),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: const [
+                    children: [
                       BottomAnimation(
                         title: "CAL",
                         startAngle: 150,

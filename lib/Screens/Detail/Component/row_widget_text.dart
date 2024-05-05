@@ -8,9 +8,9 @@ class RowWidgetText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: const [
+      children: [
         TextWidget(title: "4", subTitle: "SERVES"),
         TextWidget(title: "1h", subTitle: "COOKS IN"),
       ],

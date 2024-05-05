@@ -13,7 +13,7 @@ class AnimatedProgressBar extends StatelessWidget {
       children: [
         Container(
           decoration: const BoxDecoration(
-            color: Color(0xff212733),
+            color: Color.fromARGB(255, 87, 92, 100),
             borderRadius: BorderRadius.all(
               Radius.circular(250),
             ),
@@ -60,9 +60,9 @@ class AnimatedProgressBar extends StatelessWidget {
           ),
         ),
         SizedBox(height: defaultPadding * 3),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: const [
+          children: [
             TextWidget(
               title: "1383",
               subTitle: "CONSUMED",
